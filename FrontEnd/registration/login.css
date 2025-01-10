@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: pink;
+    font-family: sans-serif;
+    height: 100vh;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+.center button{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+    background: #f5f5f5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.loginform{
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%)scale(1.5);
+    width: 380px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 20ms ease-in-out 0ms;
+}
+.loginform.active{
+    top: 50%;
+opacity: 1;
+transform: translate(-50%,-50%)scale(1);
+transition: top 0ms ease-in-out 200ms,
+opacity 200ms ease-in-out 0ms,
+transform 20ms ease-in-out 0ms;
+}
+.loginform .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.loginform .form h2{
+text-align: center;
+color: #222;
+margin: 10px 0px 20px;
+font-size: 25px;
+}
+.loginform .form .form-element{
+margin: 15px 0px;
+}
+.loginform .form .form-element label{
+font-size: 14px;
+color: #222;
+}
+.loginform .form .form-element input[type='text'],.loginform .form .form-element input[type='password']{
+margin-top:5px ;
+display: block;
+width: 100%;
+padding: 10px;
+outline: none;
+border: 1px solid #aaa;
+border-radius: 5px;
+}
+.loginform .form .form-element input[type='checkbox']{
+    margin-right: 5px;
+}
+.loginform .form .form-element button{
+width: 100%;
+height: 40px;
+border: none;
+outline: none;
+font-size:15px ;
+background: #222;
+color: #f5f5f5;
+border-radius: 10px;
+cursor: pointer;
+}
+.loginform .form .form-element a{
+display: block;
+text-align: right;
+font-size: 15px;
+color: #1a79ca;
+text-decoration: none;
+font-weight: 600;
+}
+/* sign up css */
+
+.sign-up{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+.sign-up button{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+    background: #f5f5f5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.s-popup{
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%)scale(1.5);
+    width: 380px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 20ms ease-in-out 0ms;
+}
+.s-popup.active{
+    top: 50%;
+opacity: 1;
+transform: translate(-50%,-50%)scale(1);
+transition: top 0ms ease-in-out 200ms,
+opacity 200ms ease-in-out 0ms,
+transform 20ms ease-in-out 0ms;
+}
+.s-popup .s-close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.s-popup .s-form h2{
+text-align: center;
+color: #222;
+margin: 10px 0px 20px;
+font-size: 25px;
+}
+.s-popup .s-form .s-form-element{
+margin: 15px 0px;
+}
+.s-popup .s-form .s-form-element label{
+font-size: 14px;
+color: #222;
+}
+.s-popup .s-form .s-form-element input[type='text'],.popup .form .form-element input[type='password']{
+margin-top:5px ;
+display: block;
+width: 100%;
+padding: 10px;
+outline: none;
+border: 1px solid #aaa;
+border-radius: 5px;
+}
+.s-popup .s-form .s-form-element input[type='checkbox']{
+    margin-right: 5px;
+}
+.s-popup .s-form .s-form-element button{
+width: 100%;
+height: 40px;
+border: none;
+outline: none;
+font-size:15px ;
+background: #222;
+color: #f5f5f5;
+border-radius: 10px;
+cursor: pointer;
+}
+.s-popup .s-form .s-form-element a{
+display: block;
+text-align: right;
+font-size: 15px;
+color: #1a79ca;
+text-decoration: none;
+font-weight: 600;
+}
