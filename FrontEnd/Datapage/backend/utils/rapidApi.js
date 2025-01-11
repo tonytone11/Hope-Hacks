@@ -1,7 +1,6 @@
 const axios = require("axios");
 const dotenv = require("dotenv");
-dotenv.config();
-
+dotenv.config({ path: '../../../.env' });
 // Define a function to fetch data
 async function fetchData(city, state) {
   const options = {
