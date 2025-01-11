@@ -11,7 +11,7 @@ const { engine } = require("express-handlebars");
 
 const app = express();
 app.use(cors());
-app.use(express.static("frontend/public"));
+app.use(express.static(path.join(__dirname, "../frontend/public")));
 
 //Sets our app to use the handlebars engine
 // app.set("view engine", "hbs");
@@ -38,9 +38,11 @@ const PORT = 3000;
 const { error } = require("console");
 
 app.use(
-  express.static("public", {
+  express.static("frontend/public", {
     setHeaders: (res, path) => {
-      if (path.endsWith(".js")) {
+      if (path.endsWith(".css")) {
+        res.setHeader("Content-Type", "text/css");
+      } else if (path.endsWith(".js")) {
         res.setHeader("Content-Type", "application/javascript");
       }
     },
