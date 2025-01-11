@@ -52,7 +52,8 @@ app.get("/api/resources", async (req, res) => {
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: "Failed to fetch resources." });
-  }  // res.send(data);
+  }
+  // res.send(data);
 });
 
 app.listen(PORT, () => {
