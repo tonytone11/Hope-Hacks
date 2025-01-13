@@ -4,84 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="/FrontEnd/registration/login.css">
     <title>Document</title>
 </head>
 
+
 <body>
 
-    </header>
-    <div class="center">
-        <button id="show-login">LOGIN</button>
-        <button id="s-show-signup">SIGN UP</button>
-    </div>
-
-    <div class="sign-up">
-
-    </div>
-    <form class="s-popup">
-        <div class="s-close-btn">&times;</div>
-        <div class="s-form">
-            <h2>SIGN UP</h2>
-            <div class="s-form-element">
-                <label for="firstname">First Name</label>
-                <input type="text " id="firstname" placeholder="Jane ">
-            </div>
-            <div class="s-form-element">
-                <label for="lastname">Last Name</label>
-                <input type="text " id="lastname" placeholder="Doe">
-            </div>
-            <div class="s-form-element">
-                <label for="email">Email</label>
-                <input type="text " id="email" placeholder="Enter email">
-            </div>
-
-            <div class="s-form-element">
-                <label for="password">Password</label>
-                <input type="text " id="password" placeholder="Enter password">
-
-                <div class="s-form-element">
-                    <label for="confirm">Confirm Password</label>
-                    <input type="text " id="confirm" placeholder="Re-enter Password">
-                </div>
-                <div class="s-form-element">
-                    <button type="submit">Register</button>
-                </div>
-                <div id="register-message"></div>
-            </div>
+    <div class="login-form-container">
+        <div class="login-picture">
+            <img src="/FrontEnd/images/food-login-pic.jpg">
         </div>
-    </form>
-    </div>
-
-    <form class="loginform">
-        <div class="close-btn">&times;</div>
+    <!-- login  -->
+    <form class="loginform active" id="register-form" method="post">
+        <!-- <div class="close-btn">&times;</div> -->
         <div class="form">
-            <h2>LOGIN</h2>
+            <h2>LOG IN</h2>
             <div class="form-element">
                 <label for="email">Email</label>
-                <input type="text " id="loginemail" placeholder="Enter email">
+                <input type="email" id="loginemail" placeholder="Enter email">
             </div>
 
             <div class="form-element">
                 <label for="password">Password</label>
-                <input type="text " id="loginpassword" placeholder="Enter password">
+                <input type="password" id="loginpassword" placeholder="Enter password">
 
                 <div class="form-element">
                     <button>Submit</button>
                 </div>
 
-                <div class="form-element">
-                    <a href="#">Forgot password?</a>
-                </div>
+
+                <div id="register-message"></div>
             </div>
         </div>
-        </div>
+        <p>Don't have an account? <a href="/FrontEnd/registration/signup.html"> Sign Up</a></p>
+        <p class="invalidmsg"></p>
     </form>
 
+</div>
 
 
-    <script src="script2.js"></script>
-    <script src="modal.js"></script>
+
+
+
+    <script src="/registration/script2.js"></script>
+
 
 </body>
 
