@@ -37,76 +37,86 @@ header {
     border-radius: 4px;
 }
 
+/* form css below*/
 
-/* frequently asked questions */
-
-h2 {
+.whole-vol  {
     display: flex;
     justify-content: center;
-    padding-top: 120px;
-    padding-bottom: 40px;
-    font-size: 50px;
-    font-family: sans-serif;
-    font-weight: 700;
-}
-
-
-.accordian {
-    margin: 60px auto;
-    width: 800px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.accordian li {
-    list-style: none;
-    width: 100%;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #eaeaea;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, .15), -6px -6px 10px -1px rgba(255, 255, 255, .7);
-}
-
-.accordian li label {
-    display: flex;
     align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.vol-form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid red
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.volunteer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+input {
+    width: 95%;
     padding: 10px;
-    font-size: 18px;
-    font-weight: 500;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #4facfe;
+}
+
+button {
+    background-color: #4facfe;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
-label::before {
-    content: '+';
-    margin-right: 10px;
-    font-size: 30px;
-    font-weight: 600;
+button:hover {
+    background-color: #00f2fe;
 }
 
-input[type="radio"]{
-    display: none;
+button:active {
+    background-color: #007bff;
 }
-
-.accordian .content {
-    color: #555;
-    padding: 0 10px;
-    line-height: 26px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .5s, padding .5s;
-}
-
-.accordian input[type="radio"]:checked + label + .content{
-    max-height: 400px;
-    padding: 10px 10px 20px;
-}
-
-.accordian input[type="radio"]:checked + label::before {
-    content: '-';
-}
-
-
-
 
 /* footer css below */
 
