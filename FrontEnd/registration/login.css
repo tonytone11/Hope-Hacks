@@ -1,210 +1,357 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background: pink;
-    font-family: sans-serif;
-    height: 100vh;
-}
-.center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    background-color: #eeeeee;
 }
 
-.center button{
-    padding: 10px 20px;
-    font-size: 15px;
-    font-weight: 600;
-    color: #222;
-    background: #f5f5f5;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 5px;
+/* Container Layout */
+.login-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90%;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgb(189, 189, 189);
+    border: 15px solid rgb(189, 189, 189);
+    border-radius: 20px;
 }
-.loginform{
+
+/* Left Section (Image and Content) */
+.login-picture {
+    background: url('/FrontEnd/images/food-login-pic.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 11px;
+}
+
+.login-picture::after {
     position: absolute;
-    top: -150%;
-    left: 50%;
-    opacity: 0;
-    transform: translate(-50%,-50%)scale(1.5);
-    width: 380px;
-    padding: 20px 30px;
-    background: #fff;
-    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.15);
-    border-radius: 10px;
-    transition: top 0ms ease-in-out 200ms,
-    opacity 200ms ease-in-out 0ms,
-    transform 20ms ease-in-out 0ms;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-.loginform.active{
-    top: 50%;
-opacity: 1;
-transform: translate(-50%,-50%)scale(1);
-transition: top 0ms ease-in-out 200ms,
-opacity 200ms ease-in-out 0ms,
-transform 20ms ease-in-out 0ms;
+
+.login-picture img {
+    display: none;
 }
-.loginform .close-btn{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 15px;
-    height: 15px;
-    background: #888;
-    color: #eee;
+
+/* Right Section (Form) */
+.loginform {
+    background-color: transparent;
+    padding: 40px;
+    color: white;
+    width: 400px;
+    margin: auto;
+}
+
+.loginform h2 {
     text-align: center;
-    line-height: 15px;
-    border-radius: 15px;
-    cursor: pointer;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 50px;
 }
 
-.loginform .form h2{
-text-align: center;
-color: #222;
-margin: 10px 0px 20px;
-font-size: 25px;
+.form-element {
+    margin: 30px 0;
 }
-.loginform .form .form-element{
-margin: 15px 0px;
+
+.form-element label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 20px;
 }
-.loginform .form .form-element label{
-font-size: 14px;
-color: #222;
+
+.form-element input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
 }
-.loginform .form .form-element input[type='text'],.loginform .form .form-element input[type='password']{
-margin-top:5px ;
-display: block;
-width: 100%;
-padding: 10px;
-outline: none;
-border: 1px solid #aaa;
-border-radius: 5px;
+
+.form-element input::placeholder {
+    color: #aaa;
 }
-.loginform .form .form-element input[type='checkbox']{
-    margin-right: 5px;
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(224 0 67 / 58%);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-.loginform .form .form-element button{
-width: 100%;
-height: 40px;
-border: none;
-outline: none;
-font-size:15px ;
-background: #222;
-color: #f5f5f5;
-border-radius: 10px;
-cursor: pointer;
+
+button:hover {
+    background-color: #000000;
 }
-.loginform .form .form-element a{
-display: block;
-text-align: right;
-font-size: 15px;
-color: #1a79ca;
-text-decoration: none;
-font-weight: 600;
+
+p {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 10px;
 }
+
+a {
+    color: rgb(224 0 67 / 58%);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* sign up css */
 
-.sign-up{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
+.s-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90%;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgb(189, 189, 189);
+    border: 15px solid rgb(189, 189, 189);
+    border-radius: 20px;
 }
 
-.sign-up button{
-    padding: 10px 20px;
-    font-size: 15px;
-    font-weight: 600;
-    color: #222;
-    background: #f5f5f5;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 5px;
+/* Sign-Up Form Styling */
+
+.s-popup {
+    background-color: transparent;
+    padding: 40px;
+    color: white;
+    max-width: 500px;
+    margin: auto;
 }
-.s-popup{
-    position: absolute;
-    top: -150%;
-    left: 50%;
-    opacity: 0;
-    transform: translate(-50%,-50%)scale(1.5);
-    width: 380px;
-    padding: 20px 30px;
-    background: #fff;
-    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.15);
-    border-radius: 10px;
-    transition: top 0ms ease-in-out 200ms,
-    opacity 200ms ease-in-out 0ms,
-    transform 20ms ease-in-out 0ms;
+
+.form2 {
+    width: 300px;
 }
-.s-popup.active{
-    top: 50%;
-opacity: 1;
-transform: translate(-50%,-50%)scale(1);
-transition: top 0ms ease-in-out 200ms,
-opacity 200ms ease-in-out 0ms,
-transform 20ms ease-in-out 0ms;
-}
-.s-popup .s-close-btn{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 15px;
-    height: 15px;
-    background: #888;
-    color: #eee;
+
+.s-popup h2 {
     text-align: center;
-    line-height: 15px;
-    border-radius: 15px;
-    cursor: pointer;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 50px;
 }
 
-.s-popup .s-form h2{
-text-align: center;
-color: #222;
-margin: 10px 0px 20px;
-font-size: 25px;
+.s-form-element {
+    margin: 15px 0;
 }
-.s-popup .s-form .s-form-element{
-margin: 15px 0px;
+
+.s-form-element label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 20px;
 }
-.s-popup .s-form .s-form-element label{
-font-size: 14px;
-color: #222;
+
+.s-form-element input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
 }
-.s-popup .s-form .s-form-element input[type='text'],.popup .form .form-element input[type='password']{
-margin-top:5px ;
-display: block;
-width: 100%;
-padding: 10px;
-outline: none;
-border: 1px solid #aaa;
-border-radius: 5px;
+
+.s-form-element input::placeholder {
+    color: #aaa;
 }
-.s-popup .s-form .s-form-element input[type='checkbox']{
-    margin-right: 5px;
+
+.s-form-element button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(224 0 67 / 58%);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
 }
-.s-popup .s-form .s-form-element button{
-width: 100%;
-height: 40px;
-border: none;
-outline: none;
-font-size:15px ;
-background: #222;
-color: #f5f5f5;
-border-radius: 10px;
-cursor: pointer;
+
+.s-form-element button:hover {
+    background-color: #000000;
 }
-.s-popup .s-form .s-form-element a{
-display: block;
-text-align: right;
-font-size: 15px;
-color: #1a79ca;
-text-decoration: none;
-font-weight: 600;
+
+.sign-up-picture {
+    overflow: hidden;
 }
+
+
+/* Right Section (Image) */
+
+.sign-up-picture img {
+    display: none;
+}
+
+.sign-up-picture {
+    background: url('/FrontEnd/images/sign-up-houses.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 11px;
+}
+
+.sign-up-picture::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    .login-form-container {
+        width: 90%;
+    }
+
+    .loginform {
+        padding: 30px;
+    }
+
+    .loginform h2 {
+        font-size: 40px;
+    }
+
+    .form-element input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* for the log in form */
+    .login-form-container {
+        grid-template-columns: 1fr;
+        width: 90%;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .login-picture {
+        display: none; 
+    }
+
+    .loginform {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .loginform h2 {
+        font-size: 32px;
+    }
+
+    .form-element input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+    /* for the sign up form */
+    .s-form {
+        grid-template-columns: 1fr; 
+    }
+
+    .sign-up-picture {
+        display: none; 
+    }
+
+    .s-popup {
+        padding: 20px;
+    }
+
+    .s-popup h2 {
+        font-size: 32px;
+    }
+
+    .s-form-element input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .s-form-element button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* for the log in form */
+    .loginform {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .loginform h2 {
+        font-size: 28px;
+    }
+
+    .form-element input {
+        font-size: 12px;
+        padding: 6px;
+        
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    /* for the sign up form */
+    .s-popup {
+        padding: 8px;
+        width: 100%;
+    }
+
+    .form2 {
+        max-width: 100%;
+    }
+
+    .s-popup h2 {
+        font-size: 28px;
+    }
+
+    .s-form-element input {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .s-form-element button {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
