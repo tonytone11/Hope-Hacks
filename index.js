@@ -123,10 +123,10 @@ app.get('/', (req, res) => {
 //do routes for each page
   // Route to serve the login.html file in the homepage folder
   app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname,'Frontend','registration', 'login.html')); // Serves login.html
+    res.sendFile(path.join(__dirname,'FrontEnd','registration', 'login.html')); // Serves login.html
   });
   app.get('/signup', (req, res) => {
-    res.sendFile(path.join(__dirname,'Frontend','registration', 'signup.html')); // Serves login.html
+    res.sendFile(path.join(__dirname,'FrontEnd','registration', 'signup.html')); // Serves login.html
   });
 
 
@@ -140,10 +140,10 @@ app.get('/', (req, res) => {
 
 
   app.get('/welcome', (req,res)=>{
-    res.sendFile(path.join(__dirname, 'Frontend','registration','welcome.html'));
+    res.sendFile(path.join(__dirname, 'FrontEnd','registration','welcome.html'));
   })
   app.get('/profile', (req,res)=>{
-    res.sendFile(path.join(__dirname, 'Frontend','registration','profile.html'));
+    res.sendFile(path.join(__dirname, 'FrontEnd','registration','profile.html'));
   })
 
 
