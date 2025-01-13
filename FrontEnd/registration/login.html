@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/FrontEnd/registration/login.css">
+    <link rel="stylesheet" href="/registration/login.css">
     <title>Document</title>
 </head>
 
@@ -15,33 +15,32 @@
         <div class="login-picture">
             <img src="/FrontEnd/images/food-login-pic.jpg">
         </div>
-    <!-- login  -->
-    <form class="loginform active" id="register-form" method="post">
-        <!-- <div class="close-btn">&times;</div> -->
-        <div class="form">
-            <h2>LOG IN</h2>
-            <div class="form-element">
-                <label for="email">Email</label>
-                <input type="email" id="loginemail" placeholder="Enter email">
-            </div>
-
-            <div class="form-element">
-                <label for="password">Password</label>
-                <input type="password" id="loginpassword" placeholder="Enter password">
-
+        <!-- login  -->
+        <form class="loginform active" id="login-form" method="post">
+            <!-- <div class="close-btn">&times;</div> -->
+            <div class="form">
+                <h2>LOG IN</h2>
                 <div class="form-element">
-                    <button>Submit</button>
+                    <label for="email">Email</label>
+                    <input type="email" id="loginemail" placeholder="Enter email">
                 </div>
 
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" id="loginpassword" placeholder="Enter password">
 
-                <div id="register-message"></div>
+                    <div class="form-element">
+                        <button class="loginbtn">Submit</button>
+                    </div>
+
+                    <div id="loginMessage"></div>
+                </div>
             </div>
-        </div>
-        <p>Don't have an account? <a href="/FrontEnd/registration/signup.html"> Sign Up</a></p>
-        <p class="invalidmsg"></p>
-    </form>
+            <p>Don't have an account? <a href="/registration/signup.html"> Sign Up</a></p>
+            <p class="invalidmsg"></p>
+        </form>
 
-</div>
+    </div>
 
 
 

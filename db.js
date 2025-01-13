@@ -15,7 +15,25 @@ const connection = mysql.createConnection({
 });
 
 
-console.log(connection.password);
+//tutorial code
+
+connection.connect((error)=>{
+  if(error){
+    console.log(error)
+  } else {
+    console.log('mysql connected')
+  }
+})
+
+
+
+
+
+
+
+
+
+// console.log(connection.password);
 
 
   module.exports= connection;
