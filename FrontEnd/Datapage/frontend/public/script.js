@@ -1,3 +1,8 @@
+// google translate functionality
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: "ar,zh-CN,en,fr,hi,it,ja,ko,pt,ru,es" }, 'google_translate_element');
+}
+
 document
   .getElementById("search-container")
   .addEventListener("submit", async (event) => {
@@ -50,7 +55,6 @@ document
           <p><strong>Name:</strong> ${item.name || "N/A"}</p>
           <p><strong>City:</strong> ${item.city || "N/A"}</p>
           <p><strong>State:</strong> ${item.state || "N/A"}</p>
-          <p><strong>Description:</strong> ${item.description || "No description available"}</p>
           <p><strong>Type:</strong> ${item.type || "N/A"}</p>
           <p><strong>Full Address:</strong> ${item.full_address || "N/A"}</p>
           <p><strong>Phone Number:</strong> ${item.phone_number || "N/A"}</p>
