@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body, html {
@@ -10,6 +11,7 @@ body, html {
     box-sizing: border-box;
     height: 100%;
     background-color: #eeeeee;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 nav {
@@ -22,8 +24,7 @@ nav {
 }
 
 .logo {
-    color: rgb(0, 0, 0);
-    font-size: 2rem;
+    max-width: 20%;
 }
 
 span{
@@ -79,7 +80,7 @@ nav ul li a:hover{
 
 /* Left Section (Image and Content) */
 .login-picture {
-    background: url('/FrontEnd/images/food-login-pic.jpg') no-repeat center center;
+    background: url('/images/food-login-pic.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -95,8 +96,6 @@ nav ul li a:hover{
     width: 100%;
     height: 100%;
 }
-
-
 /* Right Section (Form) */
 .loginform {
     background-color: transparent;
@@ -265,7 +264,6 @@ a:hover {
     width: 100%;
     height: 100%;
 }
-
 
 /*footer css*/
 footer {
