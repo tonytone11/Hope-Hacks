@@ -25,6 +25,16 @@
   /* background: black ; */
 }
 
+.alt-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.alt-button a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   justify-content: center;
