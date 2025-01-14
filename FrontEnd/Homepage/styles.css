@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: 'Roboto', sans-serif; */
+  font-family: "Roboto", sans-serif;
 }
 
 .hero {
@@ -245,6 +245,58 @@ footer {
 }
 
 @media (max-width: 768px) {
+  /* *{
+        overflow-x: hidden;
+    } */
+  .hero {
+    width: 100%;
+  }
+
+  .goog-te-gadget .goog-te-combo {
+    width: 79%;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    width: 16%;
+  }
+  nav {
+    padding-right: 4%;
+    gap: 1rem;
+    justify-content: space-evenly;
+  }
+  .hero-text {
+    width: 62%;
+    margin-right: 36%;
+    padding: 1% 0 2% 0;
+  }
+
+  .nav-container h1 {
+    margin-right: 30%;
+  }
+
+  .nav-container-child {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 34rem;
+    height: 12rem;
+    margin-left: 50%;
+    margin-top: 9%;
+    gap: 4%;
+  }
+
+  .buttons {
+    margin-left: -51%;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .footer-container {
     max-width: 720px;
   }
@@ -263,10 +315,47 @@ footer {
   .wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .wrapper .footer-widget,
   .wrapper .footer-widget:nth-child(1) {
     width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 1024px) {
+  nav {
+    padding-left: 8%;
+  }
+  h2.logo {
+    width: 23%;
+  }
+  .elements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+  }
+
+  .hero {
+    height: 54vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 44vh;
+  }
+  .nav-container-child {
+    margin-left: 21%;
+  }
+
+  .logo {
+    font-size: 0.2rem;
+  }
+  .logo h2 {
+    width: 42%;
   }
 }
