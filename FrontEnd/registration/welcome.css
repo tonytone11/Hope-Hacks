@@ -5,7 +5,8 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+
 }
 
 .welcome-page {
@@ -91,4 +92,23 @@ button a {
 button:hover {
     border: none; /* Removes the border on hover */
     color: #fff; /* Ensures the text color stays consistent */
+}
+
+@media (max-width: 768px){
+    .welcome-page {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+    }
+    .left h1 {
+        font-size:2em;
+        color: #333;
+        margin-bottom: 15px;
+    }
+    
+    .left p {
+        font-size: 1em;
+        color: #666;
+        line-height: 1;
+    }
 }
