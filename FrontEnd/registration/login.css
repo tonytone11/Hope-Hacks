@@ -96,9 +96,6 @@ nav ul li a:hover{
     height: 100%;
 }
 
-.login-picture img {
-    display: none;
-}
 
 /* Right Section (Form) */
 .loginform {
@@ -255,11 +252,6 @@ a:hover {
 
 
 /* Right Section (Image) */
-
-.sign-up-picture img {
-    display: none;
-}
-
 .sign-up-picture {
     background: url('/FrontEnd/images/sign-up-houses.jpg') no-repeat center center;
     background-size: cover;
