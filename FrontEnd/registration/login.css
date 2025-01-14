@@ -71,10 +71,11 @@ body, html {
 .login-picture {
     background: url('/FrontEnd/images/food-login-pic.jpg') no-repeat center center;
     background-size: cover;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+     */
+     position: relative;
     border-radius: 11px;
 }
 
@@ -87,8 +88,8 @@ body, html {
 }
 
 .login-picture img {
-    height: 735px;
-    width: 400px;
+    height: 85vh;
+    width: 550px;
 }
 
 /* Right Section (Form) */
@@ -247,9 +248,9 @@ a:hover {
 
 /* Right Section (Image) */
 
-.sign-up-picture img {
+/* .sign-up-picture img {
     display: none;
-}
+} */
 
 .sign-up-picture {
     background: url('/FrontEnd/images/sign-up-houses.jpg') no-repeat center center;
