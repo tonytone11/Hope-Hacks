@@ -20,7 +20,7 @@ nav {
 }
 
 span{
-    color: #000000;
+    color: red;
 }
 
 nav ul li{
@@ -38,6 +38,7 @@ nav ul li a {
 nav ul li a:hover{
     color: #ea1538;
     transition: .3s;
+    text-decoration: none;
 }
 
 /* google translate css*/
@@ -428,6 +429,10 @@ footer {
     margin: 0;
     padding: 0;
     margin-left: -30px;
+}
+
+.desc {
+    color: black;
 }
 
 .wrapper .footer-widget .footer-logo {

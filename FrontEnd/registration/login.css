@@ -2,8 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
-/* nav styling */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #eeeeee;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -18,18 +28,17 @@ nav {
 }
 
 span{
-    color: #ea1538;
+    color: #000000;
 }
 
 nav ul li{
-    font-size: 1.5rem;
     list-style-type: none;
     display: inline-block;
     padding: 10% 20px;
 }
 
 nav ul li a {
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight:  bold;
 }
@@ -37,21 +46,23 @@ nav ul li a {
 nav ul li a:hover{
     color: #ea1538;
     transition: .3s;
+    text-decoration: none;
 }
-/* translate styling */
+
+/* google translate css*/
 .goog-te-combo {
-    border-radius: 2rem;
-    font-size: 1rem;
+    font-size: 14px; 
+    background-color: #000000; 
+    color: #ffffff; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    width: 150px;
 }
 
 
-body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-    height: 100%;
-    background-color: #eeeeee;
+.goog-te-combo:hover {
+    background-color: #323232; 
+    cursor: pointer;
 }
 
 /* Container Layout */
@@ -69,7 +80,7 @@ body, html {
 
 /* Left Section (Image and Content) */
 .login-picture {
-    background: url('/FrontEnd/images/food-login-pic.jpg') no-repeat center center;
+    background: url('/images/food-login-pic.jpg') no-repeat center center;
     background-size: cover;
     /* display: flex;
     justify-content: center;
@@ -87,10 +98,11 @@ body, html {
     height: 100%;
 }
 
-.login-picture img {
+/* .login-picture img {
+  
     height: 85vh;
     width: 550px;
-}
+} */
 
 /* Right Section (Form) */
 .loginform {
@@ -149,7 +161,7 @@ button:hover {
     background-color: #000000;
 }
 
-p {
+.account-question {
     text-align: center;
     color: #ffffff;
     margin-top: 10px;
@@ -267,141 +279,13 @@ a:hover {
 }
 
 
-/* Responsive Design */
-
-@media (max-width: 1024px) {
-    .login-form-container {
-        width: 90%;
-    }
-
-    .loginform {
-        padding: 30px;
-    }
-
-    .loginform h2 {
-        font-size: 40px;
-    }
-
-    .form-element input {
-        font-size: 14px;
-    }
-
-    button {
-        font-size: 14px;
-        padding: 8px;
-    }
-}
-
-@media (max-width: 768px) {
-    /* for the log in form */
-    .login-form-container {
-        grid-template-columns: 1fr;
-        width: 90%;
-        height: auto;
-        margin-top: 15px;
-    }
-
-    .login-picture {
-        display: none; 
-    }
-
-    .loginform {
-        padding: 20px;
-        margin-top: 20px;
-    }
-
-    .loginform h2 {
-        font-size: 32px;
-    }
-
-    .form-element input {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    button {
-        font-size: 14px;
-        padding: 8px;
-    }
-    /* for the sign up form */
-    .s-form {
-        grid-template-columns: 1fr; 
-    }
-
-    .sign-up-picture {
-        display: none; 
-    }
-
-    .s-popup {
-        padding: 20px;
-    }
-
-    .s-popup h2 {
-        font-size: 32px;
-    }
-
-    .s-form-element input {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    .s-form-element button {
-        font-size: 14px;
-        padding: 8px;
-    }
-}
-
-@media (max-width: 480px) {
-    /* for the log in form */
-    .loginform {
-        padding: 15px;
-        width: 100%;
-    }
-
-    .loginform h2 {
-        font-size: 28px;
-    }
-
-    .form-element input {
-        font-size: 12px;
-        padding: 6px;
-        
-    }
-
-    button {
-        font-size: 12px;
-        padding: 6px;
-    }
-
-    /* for the sign up form */
-    .s-popup {
-        padding: 8px;
-        width: 100%;
-    }
-
-    .form2 {
-        max-width: 100%;
-    }
-
-    .s-popup h2 {
-        font-size: 28px;
-    }
-
-    .s-form-element input {
-        font-size: 12px;
-        padding: 6px;
-    }
-
-    .s-form-element button {
-        font-size: 12px;
-        padding: 6px;
-    }
-}
+/*footer css*/
 footer {
     position: relative;
     width: 100%;
     height: auto;
     padding-top: 80px;
+    background-color: white;
 }
 
 .footer-container {
@@ -524,19 +408,158 @@ footer {
     color: rgb(0, 0, 0);
 }
 
-.desc{
-    color: #000000;
-}
-/* google translate css*/
-.goog-te-combo {
-    font-size: 14px; 
-    background-color: #000000; 
-    color: #ffffff; 
-    padding: 5px 10px; 
-    border-radius: 5px; 
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    .login-form-container {
+        width: 90%;
+    }
+
+    .loginform {
+        padding: 30px;
+    }
+
+    .loginform h2 {
+        font-size: 40px;
+    }
+
+    .form-element input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
 
-.goog-te-combo:hover {
-    background-color: #323232; 
-    cursor: pointer;
+@media(max-width:992px) {
+    .footer-container {
+        max-width: 960px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper .footer-widget, 
+    .wrapper .footer-widget:nth-child(1){
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    /* for the log in form */
+    .login-form-container {
+        grid-template-columns: 1fr;
+        width: 90%;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .login-picture {
+        display: none; 
+    }
+
+    .loginform {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .loginform h2 {
+        font-size: 32px;
+    }
+
+    .form-element input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+    /* for the sign up form */
+    .s-form {
+        grid-template-columns: 1fr; 
+    }
+
+    .sign-up-picture {
+        display: none; 
+    }
+
+    .s-popup {
+        padding: 20px;
+    }
+
+    .s-popup h2 {
+        font-size: 32px;
+    }
+
+    .s-form-element input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .s-form-element button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .footer-container {
+        max-width: 720px;
+    }
+    .wrapper .footer-widget, 
+    .wrapper .footer-widget:nth-child(1){
+        width: 100%;
+        margin: 0 10px 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* for the log in form */
+    .loginform {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .loginform h2 {
+        font-size: 28px;
+    }
+
+    .form-element input {
+        font-size: 12px;
+        padding: 6px;
+        
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    /* for the sign up form */
+    .s-popup {
+        padding: 8px;
+        width: 100%;
+    }
+
+    .form2 {
+        max-width: 100%;
+    }
+
+    .s-popup h2 {
+        font-size: 28px;
+    }
+
+    .s-form-element input {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .s-form-element button {
+        font-size: 12px;
+        padding: 6px;
+    }
 }
