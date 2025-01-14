@@ -164,9 +164,9 @@
 }
 
 /* styling for box */
-.box-container {
+/* .box-container {
   padding-top: 4rem;
-}
+} */
 
 .wrap {
   background: linear-gradient(
@@ -209,9 +209,8 @@ hr.new1 {
 .new2 {
   border-bottom: 2px solid red;
   height: 4%;
-  width: 6rem;
-  margin-top: 5%;
-  margin-left: 48%;
+  width: 35rem;
+  margin: 5% auto;
 }
 
 #first-col,
@@ -246,7 +245,7 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem;
+  padding: 0 5rem 5rem;
 }
 
 #last-sec {
