@@ -244,30 +244,6 @@ footer {
   color: rgb(0, 0, 0);
 }
 
-/* responsive footer */
-
-/* @media (max-width: 992px) {
-  .footer-container {
-    max-width: 960px;
-  }
-
-  .wrapper .footer-widget,
-  .wrapper .footer-widget:nth-child(1) {
-    width: calc(50% - 30px);
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-container {
-    max-width: 720px;
-  }
-  .wrapper .footer-widget,
-  .wrapper .footer-widget:nth-child(1) {
-    width: 100%;
-    margin: 0 10px 50px;
-  }
-} */
-
 @media (max-width: 768px) {
   .footer-container {
     max-width: 720px;
