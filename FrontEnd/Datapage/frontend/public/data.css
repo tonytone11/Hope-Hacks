@@ -3,10 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Body Styling */
-body {
+/* body {
     font-family: 'Times New Roman', Times, serif;
     background: white;
     color: black;
@@ -14,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 /* Nav Styling */
 nav {
@@ -27,22 +28,22 @@ nav {
 }
 
 .logo {
-    max-width: 20%;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
 }
 
 span{
-    color: #ea1538;
+    color: red;
 }
 
 nav ul li{
-    font-size: 1.5rem;
     list-style-type: none;
     display: inline-block;
     padding: 10% 20px;
 }
 
 nav ul li a {
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight:  bold;
 }
@@ -50,11 +51,23 @@ nav ul li a {
 nav ul li a:hover{
     color: #ea1538;
     transition: .3s;
+    text-decoration: none;
 }
-/* translate styling */
+
+/* google translate css*/
 .goog-te-combo {
-    border-radius: 2rem;
-    font-size: 1rem;
+    font-size: 14px; 
+    background-color: #000000; 
+    color: #ffffff; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    width: 150px;
+}
+
+
+.goog-te-combo:hover {
+    background-color: #323232; 
+    cursor: pointer;
 }
 
 /* Header Styling */
@@ -167,7 +180,6 @@ footer {
     width: 100%;
     height: auto;
     padding-top: 80px;
-    background-color: white;
 }
 
 .footer-container {
@@ -175,7 +187,6 @@ footer {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 12px;
-
 }
 
 .wrapper {
@@ -200,6 +211,11 @@ footer {
     max-width: 300px;
     margin: 0;
     padding: 0;
+    margin-left: -30px;
+}
+
+.desc {
+    color: black;
 }
 
 .wrapper .footer-widget .footer-logo {
@@ -212,7 +228,6 @@ footer {
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 24px;
-
 }
 
 .wrapper .footer-widget .socials {
@@ -230,7 +245,7 @@ footer {
     height: 44px;
     margin-right: 10px;
     color: white;
-    background-color: #ea1538;
+    background-color: rgb(224 0 67 / 58%);
     border-radius: 50%;
     font-size: 28px;
     text-decoration: none;
@@ -241,7 +256,7 @@ footer {
 }
 
 .wrapper .footer-widget .socials li a:hover {
-    background-color: rgb(133, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 
 .wrapper .footer-widget h6{
@@ -254,7 +269,6 @@ footer {
 .wrapper .footer-widget .links li{
     list-style: none;
 }
-
 
 .wrapper .footer-widget .links li a {
     color: #585978;
@@ -340,6 +354,11 @@ footer {
 @media(max-width:992px) {
     .footer-container {
         max-width: 960px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
     }
 
     .wrapper .footer-widget, 
