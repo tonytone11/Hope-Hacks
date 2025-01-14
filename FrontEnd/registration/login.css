@@ -82,11 +82,10 @@ nav ul li a:hover{
 .login-picture {
     background: url('/images/food-login-pic.jpg') no-repeat center center;
     background-size: cover;
-    /* display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-     */
-     position: relative;
+    position: relative;
     border-radius: 11px;
 }
 
@@ -97,13 +96,6 @@ nav ul li a:hover{
     width: 100%;
     height: 100%;
 }
-
-/* .login-picture img {
-  
-    height: 85vh;
-    width: 550px;
-} */
-
 /* Right Section (Form) */
 .loginform {
     background-color: transparent;
@@ -259,11 +251,6 @@ a:hover {
 
 
 /* Right Section (Image) */
-
-/* .sign-up-picture img {
-    display: none;
-} */
-
 .sign-up-picture {
     background: url('/FrontEnd/images/sign-up-houses.jpg') no-repeat center center;
     background-size: cover;
@@ -277,7 +264,6 @@ a:hover {
     width: 100%;
     height: 100%;
 }
-
 
 /*footer css*/
 footer {
