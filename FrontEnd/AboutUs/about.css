@@ -57,15 +57,6 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
-/*About header*/
-/* .about-header {
-    font-size: 60px;
-    font-weight: bold;
-    text-align: center;
-    color: #000000; 
-    background: linear-gradient(to top, rgb(255, 255, 255), rgb(224 0 67 / 58%));
-    padding: 90px 0;
-} */
 /*Our goal css */
 
 .our-goal {
@@ -114,7 +105,10 @@ nav ul li a:hover{
     align-items: center;
     justify-content: center;
     background-color: rgb(229, 229, 229);
+    overflow: auto;
 }
+
+
 
 .red-words {
     color: rgb(224 0 67 / 58%);
@@ -523,7 +517,6 @@ footer {
     color: rgb(0, 0, 0);
 }
 
-
 /* responsive */
 @media (max-width: 768px) {
     /* responsive header */
@@ -545,27 +538,6 @@ footer {
         padding: 1rem;
     }
 
-
-    .facts {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .facts-para h2 {
-        font-size: 60px;
-    }
-    
-    .facts-para {
-        max-width: 100%;
-    }
-    
-    .fact-card-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .fact-cards {
-        width: 100%;
-    }
 
     /* team photos */
     .team-img {
@@ -611,9 +583,6 @@ footer {
 }
 
 @media(max-width:992px) {
-
-    
-
     .footer-container {
         max-width: 960px;
     }
@@ -646,6 +615,27 @@ footer {
 
     .our-goal-para {
     font-size: 1.3rem;
+    }
+
+    .facts {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .facts-para h2 {
+        font-size: 60px;
+    }
+    
+    .facts-para {
+        max-width: 100%;
+    }
+    
+    .fact-card-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .fact-cards {
+        width: 100%;
     }
 }
 
