@@ -11,6 +11,7 @@ const app = express();
 app.use(cors());
 app.use("/Homepage", express.static(path.join(__dirname, "../Homepage")));
 app.use(express.static(path.join(__dirname, "../frontend/public")));
+app.use(express.static(path.join(__dirname, "public")));
 app.use("/images", express.static(path.join(__dirname, "../../images")));
 
 //Sets our app to use the handlebars engine
