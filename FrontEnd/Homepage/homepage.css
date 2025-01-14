@@ -1,3 +1,7 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 /* styling for cards */
 .description {
   display: flex;
