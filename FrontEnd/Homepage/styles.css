@@ -87,10 +87,11 @@ button:hover {
 /* google translate css*/
 .goog-te-combo {
   font-size: 14px;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #fff;
+  color: black;
   padding: 5px 10px;
   border-radius: 5px;
+  width: 150px;
 }
 
 .goog-te-combo:hover {
@@ -103,6 +104,16 @@ button:hover {
   flex-direction: row;
   gap: 15%;
   /* width: 100%; */
+}
+
+#login-but a {
+    text-decoration: none;
+    color: white;
+}
+
+#login-but a:visited{
+    text-decoration: none;
+    color: white;
 }
 
 /* footer css below */
