@@ -40,6 +40,7 @@ nav ul li a:hover{
     transition: .3s;
 }
 
+/* google translate css*/
 .goog-te-combo {
     font-size: 14px; 
     background-color: #000000; 
@@ -55,14 +56,14 @@ nav ul li a:hover{
 }
 
 /*About header*/
-.about-header {
+/* .about-header {
     font-size: 60px;
     font-weight: bold;
     text-align: center;
     color: #000000; 
     background: linear-gradient(to top, rgb(255, 255, 255), rgb(224 0 67 / 58%));
     padding: 90px 0;
-}
+} */
 /*Our goal css */
 
 .our-goal {
@@ -223,6 +224,22 @@ nav ul li a:hover{
     border-radius: 8px; 
 }
 
+.bottom-row .items:last-child .custom-tooltip {
+    top: 85%;
+}
+.bottom-row .items:last-child .team-img {
+    position: relative;
+    top: -15px;
+}
+.bottom-row .items:last-child .team-name {
+    position: relative;
+    top: -15px;
+}
+.bottom-row .items:last-child .quote {
+    position: relative;
+    top: -15px;
+}
+
 .team-img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -343,7 +360,7 @@ section {
     border-top: 2px solid #ddd;
 }
 
-.contact-container {
+#contact-container {
     max-width: 600px;
     margin: 0 auto; 
 }
@@ -522,6 +539,7 @@ footer {
         padding: 1rem;
     }
 
+
     .facts {
         flex-direction: column;
         gap: 20px;
@@ -548,6 +566,22 @@ footer {
         width: 200px;
     }
 
+    .bottom-row .items:last-child .custom-tooltip {
+        top: 90%;
+    }
+    .bottom-row .items:last-child .team-img {
+        position: relative;
+        top: 0;
+    }
+    .bottom-row .items:last-child .team-name {
+        position: relative;
+        top: 0px;
+    }
+    .bottom-row .items:last-child .quote {
+        position: relative;
+        top: 0px;
+    }
+
     .items {
         margin: 20px 10px;
         padding: 15px;
@@ -571,6 +605,9 @@ footer {
 }
 
 @media(max-width:992px) {
+
+    
+
     .footer-container {
         max-width: 960px;
     }
