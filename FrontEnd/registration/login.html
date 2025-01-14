@@ -1,145 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/FrontEnd/registration/login.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/registration/login.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <header>
-        <div class="hero">
-            <nav>
-                <h2 class="logo">Open <span>Arms</span> Immigration</h2>
-                <ul class="navbar">
-                    <li><a href="/FrontEnd/Homepage/index.html">Home</a></li>
-                    <li><a href="/FrontEnd/Datapage/frontend/data.html">Resources</a></li>
-                    <li><a href="/FrontEnd/AboutUs/about.html">About Us</a></li>
-                </ul>
-                <div id="google_translate_element"></div>
-            </nav>
-        </div>
+      <div class="hero">
+        <nav>
+          <h2 class="logo">Open <span>Arms</span> Immigration</h2>
+          <ul class="navbar">
+            <li><a href="/Homepage/index.html">Home</a></li>
+            <li><a href="/Datapage/frontend/data.html">Resources</a></li>
+            <li><a href="/AboutUs/about.html">About Us</a></li>
+          </ul>
+          <div id="google_translate_element"></div>
+        </nav>
+      </div>
     </header>
 
     <div class="login-form-container">
-        <div class="login-picture">
-            <img src="">
-        </div>
-        <!-- login  -->
-        <form class="loginform active" id="login-form" method="post">
-            <!-- <div class="close-btn">&times;</div> -->
-            <div class="form">
-                <h2>LOGIN</h2>
-                <div class="form-element">
-                    <label for="email">Email</label>
-                    <input type="email" id="loginemail" placeholder="Enter email">
-                </div>
+      <div class="login-picture">
+        <img src="/images/food-login-pic.jpg" />
+      </div>
+      <!-- login  -->
+      <form class="loginform active" id="login-form" method="post">
+        <!-- <div class="close-btn">&times;</div> -->
+        <div class="form">
+          <h2>LOGIN</h2>
+          <div class="form-element">
+            <label for="email">Email</label>
+            <input type="email" id="loginemail" placeholder="Enter email" />
+          </div>
 
-                <div class="form-element">
-                    <label for="password">Password</label>
-                    <input type="password" id="loginpassword" placeholder="Enter password">
+          <div class="form-element">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="loginpassword"
+              placeholder="Enter password"
+            />
 
-                    <div class="form-element">
-                        <button class="loginbtn">Submit</button>
-                    </div>
-
-                    <div id="loginMessage"></div>
-                </div>
+            <div class="form-element">
+              <button class="loginbtn">Submit</button>
             </div>
-            <p>Don't have an account? <a href="/FrontEnd/registration/signup.html"> Sign Up</a></p>
-            <p class="invalidmsg"></p>
-        </form>
 
+            <div id="loginMessage"></div>
+          </div>
+        </div>
+        <p id="signup-p">
+          Don't have an account?
+          <a href="/registration/signup.html"> Sign Up</a>
+        </p>
+        <p class="invalidmsg"></p>
+      </form>
     </div>
 
-
     <footer>
-        <div class="footer-container">
-            <div class="wrapper">
-                <div class="footer-widget">
-                    <a href="/Homepage/index.html">
-                        <img src="/FrontEnd/images/footer-logo.jpg" class="footer-logo">
-                    </a>
-                    <p class="desc">
-                        Serving your community since 2024.
-                    </p>
-                    <ul class="socials">
-                        <li>
-                            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-                                <i class='bx bxl-instagram'></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-                                <i class='bx bxl-facebook'></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.x.com" target="_blank" aria-label="Twitter">
-                                <i class='bx bxl-twitter'></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
-                                <i class='bx bxl-tiktok'></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com" target="_blank" aria-label="Youtube">
-                                <i class='bx bxl-youtube'></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-widget">
-                    <h6>Quick Links</h6>
-                    <ul class="links">
-                        <li><a href="/Homepage/index.html">Home</a></li>
-                        <li><a href="#contact-container">Locations</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                    </ul>
-                </div>
-                <div class="footer-widget">
-                    <h6>Support</h6>
-                    <ul class="links">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#contact-container">Contact Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright-wrapper">
-                <p>Created and Designed by
-                    <a href="https://www.linkedin.com/company/roadtohire/posts/?feedView=all" target="blank">Open Arms
-                        Immigration</a>
-                </p>
-            </div>
+      <div class="footer-container">
+        <div class="wrapper">
+          <div class="footer-widget">
+            <a href="/Homepage/index.html">
+              <img src="/images/footer-logo.jpg" class="footer-logo" />
+            </a>
+            <p class="desc">Serving your community since 2024.</p>
+            <ul class="socials">
+              <li>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  aria-label="Instagram"
+                >
+                  <i class="bx bxl-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
+                  <i class="bx bxl-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.x.com"
+                  target="_blank"
+                  aria-label="Twitter"
+                >
+                  <i class="bx bxl-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com"
+                  target="_blank"
+                  aria-label="TikTok"
+                >
+                  <i class="bx bxl-tiktok"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com"
+                  target="_blank"
+                  aria-label="Youtube"
+                >
+                  <i class="bx bxl-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-widget">
+            <h6>Quick Links</h6>
+            <ul class="links">
+              <li><a href="/Homepage/index.html">Home</a></li>
+              <li><a href="#contact-container">Locations</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+            </ul>
+          </div>
+          <div class="footer-widget">
+            <h6>Support</h6>
+            <ul class="links">
+              <li><a href="#">About</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact-container">Contact Us</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
         </div>
+        <div class="copyright-wrapper">
+          <p>
+            Created and Designed by
+            <a
+              href="https://www.linkedin.com/company/roadtohire/posts/?feedView=all"
+              target="blank"
+              >Open Arms Immigration</a
+            >
+          </p>
+        </div>
+      </div>
     </footer>
 
+    <script src="/registration/script2.js"></script>
+    <script src="/DataPage/frontend/public/script.js"></script>
+    <script src="/AboutUs/about.js"></script>
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
 
-</body>
-
-</html>
-<script src="/registration/script2.js"></script>
-<script src="/DataPage/FrontEnd/public/script.js"></script>
-<script src="about.js"></script>
-<script type="text/javascript"
-    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
-
-
-
-<script src="/registration/script2.js"></script>
-
-
-</body>
-
+    <script src="/registration/script2.js"></script>
+  </body>
 </html>

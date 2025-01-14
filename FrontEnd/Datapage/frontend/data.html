@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resource Search</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/FrontEnd/Datapage/frontend/public/data.css" />
+    <link rel="stylesheet" href="/Datapage/frontend/public/data.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -16,15 +16,17 @@
             <nav>
                 <h2 class="logo">Open <span>Arms</span> Immigration</h2>
                 <ul class="navbar">
-                    <li><a href="/FrontEnd/Homepage/index.html">Home</a></li>
-                    <li><a href="/FrontEnd/Datapage/frontend/data.html">Resources</a></li>
-                    <li><a href="/FrontEnd/AboutUs/about.html">About Us</a></li>
+                    <li><a href="/Homepage/index.html">Home</a></li>
+                    <li><a href="/Datapage/frontend/data.html">Resources</a></li>
+                    <li><a href="/AboutUs/about.html">About Us</a></li>
                 </ul>
                 <div id="google_translate_element"></div>
             </nav>
         </div>
     </header>
+    <div style="display: flex; justify-content: center;">
     <h1>Find Resources</h1>
+    </div>
     <form id="search-container">
         <input id="city" type="text" class="search-bar" placeholder="Enter City" />
         <input id="state" type="text" class="search-bar" placeholder="Enter State (nc, fl)" />
@@ -36,7 +38,7 @@
         <div class="footer-container">
             <div class="wrapper">
                 <div class="footer-widget">
-                    <a href="#">
+                    <a href="/Homepage/index.html">
                         <img src="/images/footer-logo.jpg" class="footer-logo">
                     </a>
                     <p class="desc">
@@ -73,8 +75,8 @@
                 <div class="footer-widget">
                     <h6>Quick Links</h6>
                     <ul class="links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Locations</a></li>
+                        <li><a href="/Homepage/index.html">Home</a></li>
+                        <li><a href="#contact-container">Locations</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Use</a></li>
                     </ul>
@@ -84,7 +86,7 @@
                     <ul class="links">
                         <li><a href="#">About</a></li>
                         <li><a href="#faq">FAQ</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#contact-container">Contact Us</a></li>
                         <li><a href="#">Careers</a></li>
                     </ul>
                 </div>
@@ -97,7 +99,7 @@
             </div>
         </div>
     </footer>
-    <script src="/FrontEnd/Datapage/frontend/public/script.js"></script>
+    <script src="/Datapage/frontend/public/script.js"></script>
     <script type="text/javascript"
         src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
