@@ -18,8 +18,8 @@ nav {
   font-size: 2rem;
 }
 
-span {
-  color: #000000;
+span{
+    color: red;
 }
 
 nav ul li {
@@ -34,18 +34,20 @@ nav ul li a {
   font-weight: bold;
 }
 
-nav ul li a:hover {
-  color: #ea1538;
-  transition: 0.3s;
+nav ul li a:hover{
+    color: #ea1538;
+    transition: .3s;
+    text-decoration: none;
 }
 
 /* google translate css*/
 .goog-te-combo {
-  font-size: 14px;
-  background-color: #000000;
-  color: #ffffff;
-  padding: 5px 10px;
-  border-radius: 5px;
+    font-size: 14px; 
+    background-color: #000000; 
+    color: #ffffff; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    width: 150px;
 }
 
 .goog-te-combo:hover {
@@ -53,15 +55,6 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-/*About header*/
-/* .about-header {
-    font-size: 60px;
-    font-weight: bold;
-    text-align: center;
-    color: #000000; 
-    background: linear-gradient(to top, rgb(255, 255, 255), rgb(224 0 67 / 58%));
-    padding: 90px 0;
-} */
 /*Our goal css */
 
 .our-goal {
@@ -106,11 +99,14 @@ nav ul li a:hover {
 }
 /* about hunger styling */
 .factos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(229, 229, 229);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(229, 229, 229);
+    overflow: auto;
 }
+
+
 
 .red-words {
   color: rgb(224 0 67 / 58%);
@@ -426,6 +422,10 @@ footer {
   margin-left: -30px;
 }
 
+.desc {
+    color: black;
+}
+
 .wrapper .footer-widget .footer-logo {
   margin-bottom: 30px;
   vertical-align: middle;
@@ -528,11 +528,11 @@ footer {
     border-bottom: 1px solid #444;
   }
 
-  .navbar a {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-  }
+    .navbar a {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+    }
 
   .facts {
     flex-direction: column;
@@ -598,10 +598,10 @@ footer {
   }
 }
 
-@media (max-width: 992px) {
-  .footer-container {
-    max-width: 960px;
-  }
+@media(max-width:992px) {
+    .footer-container {
+        max-width: 960px;
+    }
 
   .wrapper {
     display: flex;
@@ -615,11 +615,34 @@ footer {
 }
 
 @media (max-width: 1200px) {
-  .our-goal {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-  }
+
+    .facts {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .facts-para h2 {
+        font-size: 60px;
+        display: grid;
+    }
+    
+    .facts-para {
+        max-width: 100%;
+    }
+    
+    .fact-card-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .fact-cards {
+        width: 100%;
+    }
+
+    .our-goal {
+        flex-direction: column; 
+        text-align: center;
+        gap: 30px;
+    }
 
   .our-goal-image img {
     max-width: 100%;
@@ -631,7 +654,9 @@ footer {
 
   .our-goal-para {
     font-size: 1.3rem;
-  }
+    }
+
+    
 }
 
 @media (max-width: 480px) {

@@ -7,13 +7,13 @@
 
 /* Body Styling */
 body {
-  font-family: "Roboto", sans-serif;
-  background: white;
-  color: black;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    background: white;
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Nav Styling */

@@ -2,15 +2,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
     height: 100%;
     background-color: #eeeeee;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo {
+    max-width: 20%;
+}
+
+span{
+    color: #000000;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10% 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight:  bold;
+}
+
+nav ul li a:hover{
+    color: #ea1538;
+    transition: .3s;
+    text-decoration: none;
+}
+
+/* google translate css*/
+.goog-te-combo {
+    font-size: 14px; 
+    background-color: #000000; 
+    color: #ffffff; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    width: 150px;
+}
+
+
+.goog-te-combo:hover {
+    background-color: #323232; 
+    cursor: pointer;
 }
 
 /* Container Layout */
@@ -28,7 +80,7 @@ body, html {
 
 /* Left Section (Image and Content) */
 .login-picture {
-    background: url('/FrontEnd/images/food-login-pic.jpg') no-repeat center center;
+    background: url('/images/food-login-pic.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -44,11 +96,6 @@ body, html {
     width: 100%;
     height: 100%;
 }
-
-.login-picture img {
-    display: none;
-}
-
 /* Right Section (Form) */
 .loginform {
     background-color: transparent;
@@ -106,7 +153,7 @@ button:hover {
     background-color: #000000;
 }
 
-p {
+.account-question {
     text-align: center;
     color: #ffffff;
     margin-top: 10px;
@@ -204,11 +251,6 @@ a:hover {
 
 
 /* Right Section (Image) */
-
-.sign-up-picture img {
-    display: none;
-}
-
 .sign-up-picture {
     background: url('/FrontEnd/images/sign-up-houses.jpg') no-repeat center center;
     background-size: cover;
@@ -223,6 +265,134 @@ a:hover {
     height: 100%;
 }
 
+/*footer css*/
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    background-color: white;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.wrapper .footer-widget {
+    width: calc(20% - 30px);
+    margin: 0 15px 50px;
+    padding: 0 12px;
+}
+
+.wrapper .footer-widget:nth-child(1) {
+    width: calc(40% - 50px);
+    margin-right: 15px;
+}
+
+.footer-logo {
+    max-width: 300px;
+    margin: 0;
+    padding: 0;
+    margin-left: -30px;
+}
+
+.wrapper .footer-widget .footer-logo {
+    margin-bottom: 30px;
+    vertical-align: middle;
+
+}
+
+.wrapper .footer-widget p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.wrapper .footer-widget .socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.wrapper .footer-widget .socials li {
+    list-style: none;
+}
+
+.wrapper .footer-widget .socials li a {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    color: white;
+    background-color: rgb(224 0 67 / 58%);
+    border-radius: 50%;
+    font-size: 28px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-out;
+}
+
+.wrapper .footer-widget .socials li a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.wrapper .footer-widget h6{
+    color: #000000;
+    margin: 10px 0 35px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.wrapper .footer-widget .links li{
+    list-style: none;
+}
+
+.wrapper .footer-widget .links li a {
+    color: #585978;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 32px;
+    transition: all .3s ease-out;
+}
+
+.wrapper .footer-widget .links li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.copyright-wrapper {
+    padding: 20px 0;
+    border-top: 1px solid rgba(88, 89, 120, .4);
+}
+
+.copyright-wrapper p {
+    color: rgba(88, 89, 120, .6);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.copyright-wrapper p a {
+    color: inherit;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+.copyright-wrapper p a:hover {
+    color: rgb(0, 0, 0);
+}
 
 /* Responsive Design */
 
@@ -246,6 +416,22 @@ a:hover {
     button {
         font-size: 14px;
         padding: 8px;
+    }
+}
+
+@media(max-width:992px) {
+    .footer-container {
+        max-width: 960px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper .footer-widget, 
+    .wrapper .footer-widget:nth-child(1){
+        width: calc(50% - 30px);
     }
 }
 
@@ -306,6 +492,15 @@ a:hover {
         font-size: 14px;
         padding: 8px;
     }
+
+    .footer-container {
+        max-width: 720px;
+    }
+    .wrapper .footer-widget, 
+    .wrapper .footer-widget:nth-child(1){
+        width: 100%;
+        margin: 0 10px 50px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -354,4 +549,3 @@ a:hover {
         padding: 6px;
     }
 }
-

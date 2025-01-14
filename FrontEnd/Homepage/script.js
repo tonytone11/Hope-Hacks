@@ -85,3 +85,9 @@ logoutButton.addEventListener('click', () => {
   registerForm.style.display = 'block';
 });
 
+
+// functionality for google translate
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({ pageLanguage: 'en'}, 'google_translate_element');
+}
+

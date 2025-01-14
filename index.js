@@ -1,6 +1,6 @@
 const express= require('express');
 const app =express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3003;
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
 const connection =require('./db');
@@ -117,7 +117,7 @@ app.post('/login', endcoder, async (req, res) => {
 
 // Route to serve the index.html file (default for root route)
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'FrontEnd','HomePage', 'index.html')); // Serves index.html
+    res.sendFile(path.join(__dirname,'HomePage', 'index.html')); // Serves index.html
   });
   
 //do routes for each page

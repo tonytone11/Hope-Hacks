@@ -25,6 +25,16 @@
   /* background: black ; */
 }
 
+.alt-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.alt-button a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -46,11 +56,11 @@
   /* box-shadow: 0 15px 0 white, inset 0 -15px 0 rgba(255, 255, 255, 0.1),
     0 45px 0 rgba(0, 0, 0, 0.07); */
 
-    /* -webkit-box-shadow: 31px 200px 55px 6px rgba(0,0,0,0.6);
+  /* -webkit-box-shadow: 31px 200px 55px 6px rgba(0,0,0,0.6);
     -moz-box-shadow: 31px 76px 55px 6px rgba(0,0,0,0.6);
     box-shadow: 31px 76px 55px 6px rgba(0,0,0,0.6);
  */
-    /* -webkit-box-shadow: 0px 6px 8px 3px rgba(0, 0, 0, 0.59);
+  /* -webkit-box-shadow: 0px 6px 8px 3px rgba(0, 0, 0, 0.59);
     -moz-box-shadow: 0px 6px 8px 3px rgba(0, 0, 0, 0.59);
     box-shadow: 0px 6px 8px 3px rgba(0, 0, 0, 0.59); */
 
@@ -92,7 +102,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 147px;
-  height: 228px;
+  /* height: 228px; */
   width: 228px;
   /* padding-left: 0px; */
   align-items: center;
@@ -164,9 +174,9 @@
 }
 
 /* styling for box */
-.box-container {
+/* .box-container {
   padding-top: 4rem;
-}
+} */
 
 .wrap {
   background: linear-gradient(
@@ -209,9 +219,8 @@ hr.new1 {
 .new2 {
   border-bottom: 2px solid red;
   height: 4%;
-  width: 6rem;
-  margin-top: 5%;
-  margin-left: 48%;
+  width: 10rem;
+  margin: 5% auto;
 }
 
 #first-col,
@@ -232,7 +241,7 @@ hr.new1 {
   font-weight: bold;
 }
 
-ul li {
+.wrap ul li {
   padding: 2%;
 }
 
@@ -246,7 +255,7 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem;
+  padding: 0 5rem 5rem;
 }
 
 #last-sec {
@@ -361,4 +370,48 @@ h6 {
   flex-direction: column;
   align-items: flex-start;
   padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+  .new2 {
+    width: 20rem;
+  }
+
+  .news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem 5rem;
+  }
+  .wrap {
+    text-align: center;
+    width: 82%;
+  }
+
+  .box-container {
+    padding: 1rem;
+  }
+
+  .elements {
+    justify-content: center;
+    align-items: center;
+  }
+  .news-container {
+    width: 90%;
+  }
+  h6.news-title {
+    font-size: 2rem;
+  }
+
+  .articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    row-gap: 1.4rem;
+    column-gap: 2%;
+  }
 }
