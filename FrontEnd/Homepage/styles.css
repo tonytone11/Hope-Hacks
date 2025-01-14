@@ -107,13 +107,13 @@ button:hover {
 }
 
 #login-but a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
-#login-but a:visited{
-    text-decoration: none;
-    color: white;
+#login-but a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 /* footer css below */
@@ -123,7 +123,6 @@ footer {
   width: 100%;
   height: auto;
   padding-top: 80px;
-  background-color: white;
 }
 
 .footer-container {
@@ -151,11 +150,14 @@ footer {
   margin-right: 15px;
 }
 
-.yuyiLogo {
-  width: 80px;
+.footer-logo {
+  max-width: 300px;
+  margin: 0;
+  padding: 0;
+  margin-left: -30px;
 }
 
-.wrapper .footer-widget .yuyiLogo {
+.wrapper .footer-widget .footer-logo {
   margin-bottom: 30px;
   vertical-align: middle;
 }
@@ -181,7 +183,7 @@ footer {
   height: 44px;
   margin-right: 10px;
   color: white;
-  background-color: rgb(164, 0, 0);
+  background-color: rgb(224 0 67 / 58%);
   border-radius: 50%;
   font-size: 28px;
   text-decoration: none;
@@ -192,7 +194,7 @@ footer {
 }
 
 .wrapper .footer-widget .socials li a:hover {
-  background-color: rgb(124, 124, 124);
+  background-color: rgb(0, 0, 0);
 }
 
 .wrapper .footer-widget h6 {
@@ -244,7 +246,7 @@ footer {
 
 /* responsive footer */
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .footer-container {
     max-width: 960px;
   }
@@ -263,5 +265,32 @@ footer {
   .wrapper .footer-widget:nth-child(1) {
     width: 100%;
     margin: 0 10px 50px;
+  }
+} */
+
+@media (max-width: 768px) {
+  .footer-container {
+    max-width: 720px;
+  }
+  .wrapper .footer-widget,
+  .wrapper .footer-widget:nth-child(1) {
+    width: 100%;
+    margin: 0 10px 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-container {
+    max-width: 960px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper .footer-widget,
+  .wrapper .footer-widget:nth-child(1) {
+    width: calc(50% - 30px);
   }
 }
