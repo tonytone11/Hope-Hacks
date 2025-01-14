@@ -80,13 +80,12 @@ nav ul li a:hover{
 
 /* Left Section (Image and Content) */
 .login-picture {
-    background: url('/images/food-login-pic.jpg') no-repeat center center;
+    background: url('/FrontEnd/images/food-login-pic.jpg') no-repeat center center;
     background-size: cover;
-    /* display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-     */
-     position: relative;
+    position: relative;
     border-radius: 11px;
 }
 
@@ -97,13 +96,6 @@ nav ul li a:hover{
     width: 100%;
     height: 100%;
 }
-
-/* .login-picture img {
-  
-    height: 85vh;
-    width: 550px;
-} */
-
 /* Right Section (Form) */
 .loginform {
     background-color: transparent;
@@ -181,13 +173,17 @@ a:hover {
 .s-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 90%;
+    /* height: 90%; */
     width: 80%;
     margin: auto;
     margin-top: 30px;
     background-color: rgb(189, 189, 189);
     border: 15px solid rgb(189, 189, 189);
     border-radius: 20px;
+}
+
+.s-popup p {
+    text-align: center;
 }
 
 /* Sign-Up Form Styling */
@@ -259,11 +255,6 @@ a:hover {
 
 
 /* Right Section (Image) */
-
-/* .sign-up-picture img {
-    display: none;
-} */
-
 .sign-up-picture {
     background: url('/FrontEnd/images/sign-up-houses.jpg') no-repeat center center;
     background-size: cover;
@@ -277,7 +268,6 @@ a:hover {
     width: 100%;
     height: 100%;
 }
-
 
 /*footer css*/
 footer {
