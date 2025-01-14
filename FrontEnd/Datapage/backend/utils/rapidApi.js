@@ -28,6 +28,7 @@ async function fetchData(city, state) {
         state: item?.state || "No state available",
         description: item?.description || "No description available",
         type: item?.type || "No type available",
+        website: item?.website || "No type available",
         full_address: item?.full_address || "No address available",
         phone_number: item?.phone_number || "No phone number available",
         business_hours: item?.business_hours || "No business hours available",
