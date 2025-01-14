@@ -56,6 +56,7 @@ document
           <p><strong>City:</strong> ${item.city || "N/A"}</p>
           <p><strong>State:</strong> ${item.state || "N/A"}</p>
           <p><strong>Type:</strong> ${item.type || "N/A"}</p>
+          <a href='${item.website || "N/A"}' target='_blank' ><strong>Website:</strong> ${item.website || "N/A"}</a>
           <p><strong>Full Address:</strong> ${item.full_address || "N/A"}</p>
           <p><strong>Phone Number:</strong> ${item.phone_number || "N/A"}</p>
           <p><strong>Business Hours:</strong> ${item.business_hours || "N/A"}</p>
