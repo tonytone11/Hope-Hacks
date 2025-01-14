@@ -143,4 +143,5 @@ app.get("/profile", (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`server is running on port ${PORT}`);
+  console.log(`index path is \n ` + path.join(__dirname, "FrontEnd", "HomePage", "index.html"))
 });
