@@ -2,65 +2,80 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     height: 100%;
-    background-color: #eeeeee;
+    background-color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 20px 10%;
+    position: relative;
 }
 
 .logo {
-    max-width: 20%;
-}
-
-span{
     color: #000000;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
-nav ul li{
-    list-style-type: none;
-    display: inline-block;
-    padding: 10% 20px;
-}
-
-nav ul li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-weight:  bold;
-}
-
-nav ul li a:hover{
+span {
     color: #ea1538;
-    transition: .3s;
-    text-decoration: none;
 }
 
-/* google translate css*/
+.navbar {
+    display: flex;
+    gap: 70px;
+    margin-top: 30px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.navbar li a:hover {
+    color: #ea1538;
+    transition: 0.3s;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 3px;
+}
+
 .goog-te-combo {
-    font-size: 14px; 
-    background-color: #000000; 
-    color: #ffffff; 
-    padding: 5px 10px; 
-    border-radius: 5px; 
+    font-size: 14px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
     width: 150px;
 }
 
-
 .goog-te-combo:hover {
-    background-color: #323232; 
+    background-color: #323232;
     cursor: pointer;
 }
 
@@ -79,7 +94,7 @@ nav ul li a:hover{
 
 /* Left Section (Image and Content) */
 .login-picture {
-    background: url('/FrontEnd/images/food-login-pic.jpg') no-repeat center center;
+    background: url('/images/food-login-pic.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -102,6 +117,10 @@ nav ul li a:hover{
     color: white;
     width: 400px;
     margin: auto;
+}
+
+#signup-p {
+    text-align: center;
 }
 
 .loginform h2 {
@@ -134,10 +153,6 @@ nav ul li a:hover{
 
 .form-element input::placeholder {
     color: #aaa;
-}
-
-#signup-p {
-    text-align: center;
 }
 
 button {
@@ -252,16 +267,12 @@ a:hover {
     background-color: #000000;
 }
 
-.sign-up-picture {
-    overflow: hidden;
-}
-
-
 /* Right Section (Image) */
 .sign-up-picture {
-    background: url('/FrontEnd/images/sign-up-houses.jpg') no-repeat center center;
+    background: url('/images/sign-up-houses.jpg') no-repeat center center;
     background-size: cover;
     border-radius: 11px;
+    overflow: hidden;
 }
 
 .sign-up-picture::after {
@@ -427,6 +438,34 @@ footer {
 }
 
 @media(max-width:992px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 10%;
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 10px 20px;
+        z-index: 10;
+    }
+
+    .desktop-language {
+        display: none;
+    }
+    .navbar.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
     .footer-container {
         max-width: 960px;
     }

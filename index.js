@@ -126,6 +126,21 @@ app.get("/about", (req, res) => {
   res.sendFile(path.join(__dirname, "FrontEnd", "AboutUs", "about.html")); // Serves login.html
 });
 
+app.get("api/data", async (req, res) => {
+  const { city, state } = req.query; // e.g., "Charlotte, NC"
+  if (!city || !state) {
+    return res.status(400).json({ error: "City and state are required." });
+  }
+  try {
+    const data = await fetchData(city, state);
+    res.status(200).json(data);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Failed to fetch resources." });
+  }
+  // res.send(data);
+});
+
 app.get("/data", (req, res) => {
   res.sendFile(path.join(__dirname, "FrontEnd", "Datapage", "data.html")); // Serves data.html
 });

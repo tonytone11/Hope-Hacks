@@ -23,9 +23,7 @@ document
 
     try {
       const response = await fetch(
-        `http://localhost:3000/api/resources?city=${encodeURIComponent(
-          city
-        )}&state=${encodeURIComponent(state)}`
+        `/api/data?city=${encodeURIComponent(city)}&state=${encodeURIComponent(state)}`
       );
 
       if (!response.ok) {

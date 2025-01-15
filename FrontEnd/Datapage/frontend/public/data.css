@@ -1,74 +1,83 @@
-/* General Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-/* Body Styling */
-/* body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    background-color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
-    background: white;
-    color: black;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-/* Nav Styling */
-nav {
+  }
+  
+  nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.logo {
-    color: rgb(0, 0, 0);
-    font-size: 2rem;
-}
-
-span{
-    color: red;
-}
-
-nav ul li{
-    list-style-type: none;
-    display: inline-block;
-    padding: 10% 20px;
-}
-
-nav ul li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-weight:  bold;
-}
-
-nav ul li a:hover{
+    padding: 20px 10%;
+    position: relative;
+  }
+  
+  .logo {
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  span {
     color: #ea1538;
-    transition: .3s;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 70px;
+    margin-top: 30px;
+  }
+  
+  .navbar li {
+    list-style: none;
+  }
+  
+  .navbar li a {
+    color: #000000;
     text-decoration: none;
-}
-
-/* google translate css*/
-.goog-te-combo {
-    font-size: 14px; 
-    background-color: #000000; 
-    color: #ffffff; 
-    padding: 5px 10px; 
-    border-radius: 5px; 
-    width: 150px;
-}
-
-
-.goog-te-combo:hover {
-    background-color: #323232; 
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .navbar li a:hover {
+    color: #ea1538;
+    transition: 0.3s;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
     cursor: pointer;
-}
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 3px;
+  }
+  
+  .goog-te-combo {
+    font-size: 14px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 150px;
+  }
+  
+  .goog-te-combo:hover {
+    background-color: #323232;
+    cursor: pointer;
+  }
 
 /* Header Styling */
 h1 {
@@ -352,6 +361,33 @@ footer {
 /* responsive footer */
 
 @media(max-width:992px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 10%;
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 10px 20px;
+        z-index: 10;
+    }
+    
+    .desktop-language {
+        display: none;
+    }
+    .navbar.active {
+        display: flex;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
     .footer-container {
         max-width: 960px;
     }
