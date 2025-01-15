@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 5008;
+const PORT = process.env.PORT || 3004;
 const dotenv = require("dotenv");
 const bodyParser = require("body-parser");
 const connection = require("./db");
