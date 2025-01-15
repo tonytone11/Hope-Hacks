@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 5002;
+const PORT = process.env.PORT || 5007;
 const dotenv = require("dotenv");
 const bodyParser = require("body-parser");
 const connection = require("./db");
@@ -8,6 +8,7 @@ const bcrypt = require("bcryptjs");
 const path = require("path");
 const { error } = require("console");
 const endcoder = bodyParser.urlencoded();
+const fetchData = require("./FrontEnd/Datapage/backend/utils/rapidApi.js");
 
 const publicDirectory = path.join(__dirname, "./");
 dotenv.config();
@@ -126,14 +127,15 @@ app.get("/about", (req, res) => {
   res.sendFile(path.join(__dirname, "FrontEnd", "AboutUs", "about.html")); // Serves login.html
 });
 
-app.get("/data/api/resource", async (req, res) => {
+app.get("/data/api/resources", async (req, res) => {
   const { city, state } = req.query; // e.g., "Charlotte, NC"
   if (!city || !state) {
     return res.status(400).json({ error: "City and state are required." });
   }
   try {
     const data = await fetchData(city, state);
-    res.status(200).json(data);
+    console.log("it's here")
+    res.send(data);
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: "Failed to fetch resources." });

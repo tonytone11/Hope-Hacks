@@ -3,7 +3,7 @@ const cors = require("cors");
 const path = require("path");
 const hbs = require("hbs");
 //import function
-const fetchData = require("./utils/rapidApi.js");
+const fetchData = require("../utils/rapidApi.js");
 //Loads the handlebars module
 const { engine } = require("express-handlebars");
 
