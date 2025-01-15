@@ -126,7 +126,7 @@ app.get("/about", (req, res) => {
   res.sendFile(path.join(__dirname, "FrontEnd", "AboutUs", "about.html")); // Serves login.html
 });
 
-app.get("api/data", async (req, res) => {
+app.get("/data/api/resource", async (req, res) => {
   const { city, state } = req.query; // e.g., "Charlotte, NC"
   if (!city || !state) {
     return res.status(400).json({ error: "City and state are required." });
